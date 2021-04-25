@@ -3,5 +3,6 @@ from django.urls import path,include
 from reservas import views
 
 urlpatterns = [
-    path('', views.login, name='login'),
+    path('', views.lotus_login, name='lotus_login'),
+    path('logout/', views.lotus_logout, name='lotus_logout'),
 ]
